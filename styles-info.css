@@ -317,13 +317,9 @@
     font-size: 1.1rem;
 }
 
-#kleding__img--img {
+#kleding__img {
     height: 400px;
     border-radius: 20px 20px 20px 20px;
-}
-
-.kleding__img--2 {
-    display: none;
 }
 
 @media screen and (max-width: 1400px) {
@@ -339,12 +335,16 @@
 
 @media screen and (max-width: 1100px) {
     .kleding__img {
-        display: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .kleding__img--2 {
-        display: flex;
-        margin-top: 50px;
+    #kleding__img {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        height: auto;
+        width: 80vw;
     }
 
     .kleding__container {
@@ -354,9 +354,10 @@
     }
 
     .kleding__content {
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
         margin-right: 0px;
+        margin-top: 20px;
     }
 }
 
